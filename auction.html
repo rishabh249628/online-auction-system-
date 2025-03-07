@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Auction</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+       
+        .item-details, .bid-info {
+            margin-bottom: 5px;
+        }
+        .item-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="a">
+        <h1>Welcome to Auction World..</h1>
+        
+    </div>
+
+    <div class="container" id="item1">
+        <div class="item-details">
+            <div class="item-info">
+                <h2>Item: Vintage Watch</h2>
+                <p>This vintage watch is a rare collector's item in excellent condition. Don't miss the chance to own this amazing piece of history.</p>
+            </div>
+            <div class="item-image">
+                <img src="./watch.jpg" alt="Vintage Watch">
+            </div>
+        </div>
+        <div class="bid-info">
+            <h3>Current Bid: $<span id="currentBid1">100</span></h3>
+            <input type="number" id="bidAmount1" placeholder="Enter your bid" min="1" step="1">
+            <button onclick="placeBid(1)">Place Bid</button>
+            <div class="timer">Auction ends in: <span id="countdown1"></span></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container" id="item2">
+        <div class="item-details">
+            <div class="item-info">
+                <h2>Item: Cycle</h2>
+                <p>This cycle is in excellent condition, perfect for leisure or commuting.</p>
+            </div>
+            <div class="item-image">
+                <img src="./cycle.jpg" alt="Cycle">
+            </div>
+        </div>
+        <div class="bid-info">
+            <h3>Current Bid: $<span id="currentBid2">150</span></h3>
+            <input type="number" id="bidAmount2" placeholder="Enter your bid" min="1" step="1">
+            <button onclick="placeBid(2)">Place Bid</button>
+            <div class="timer">Auction ends in: <span id="countdown2"></span></div>
+        </div>
+    </div>
+
+
+ 
+    <div class="container" id="item3">
+        <div class="item-details">
+            <div class="item-info">
+                <h2>Item: Fortuner</h2>
+                <p>The luxurious Fortuner is in pristine condition and ready for adventure.</p>
+            </div>
+            <div class="item-image">
+                <img src="./car.jpg" alt="Fortuner">
+            </div>
+        </div>
+        <div class="bid-info">
+            <h3>Current Bid: $<span id="currentBid3">63618.05</span></h3>
+            <input type="number" id="bidAmount3" placeholder="Enter your bid" min="1" step="1">
+            <button onclick="placeBid(3)">Place Bid</button>
+            <div class="timer">Auction ends in: <span id="countdown3"></span></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container" id="item4">
+        <div class="item-details">
+            <div class="item-info">
+                <h2>Item: iPhone 16 Pro Max</h2>
+                <p>The latest iPhone 16 Pro Max, brand new and factory-sealed.</p>
+            </div>
+            <div class="item-image">
+                <img src="./iphone 16 pro max.jpg" alt="iPhone 16 Pro Max">
+            </div>
+        </div>
+        <div class="bid-info">
+            <h3>Current Bid: $<span id="currentBid4">450</span></h3>
+            <input type="number" id="bidAmount4" placeholder="Enter your bid" min="1" step="1">
+            <button onclick="placeBid(4)">Place Bid</button>
+            <div class="timer">Auction ends in: <span id="countdown4"></span></div>
+        </div>
+    </div>
+
+
+
+    <div class="container" id="item5">
+        <div class="item-details">
+            <div class="item-info">
+                <h2>Item: Samsung Galaxy</h2>
+                <p>A brand-new Samsung Galaxy, ready to meet all your smartphone needs.</p>
+            </div>
+            <div class="item-image">
+                <img src="./samsung.jpg" alt="Samsung Galaxy">
+            </div>
+        </div>
+        <div class="bid-info">
+            <h3>Current Bid: $<span id="currentBid5">260</span></h3>
+            <input type="number" id="bidAmount5" placeholder="Enter your bid" min="1" step="1">
+            <button onclick="placeBid(5)">Place Bid</button>
+            <div class="timer">Auction ends in: <span id="countdown5"></span></div>
+        </div>
+    </div>
+
+
+
+    <div class="container" id="item6">
+        <div class="item-details">
+            <div class="item-info">
+                <h2>Item: MacBook Pro M4</h2>
+                <p>The latest MacBook Pro with M4 chip, built for power and performance.</p>
+            </div>
+            <div class="item-image">
+                <img src="./MacBook Pro M4.jpg" alt="MacBook Pro M4">
+            </div>
+        </div>
+        <div class="bid-info">
+            <h3>Current Bid: $<span id="currentBid6">1300</span></h3>
+            <input type="number" id="bidAmount6" placeholder="Enter your bid" min="1" step="1">
+            <button onclick="placeBid(6)">Place Bid</button>
+            <div class="timer">Auction ends in: <span id="countdown6"></span></div>
+        </div>
+    </div>
+
+
+
+    <div class="container" id="item7">
+        <div class="item-details">
+            <div class="item-info">
+                <h2>Item: Rog Ally</h2>
+                <p>A gaming powerhouse, the Rog Ally is the ultimate portable gaming device.</p>
+            </div>
+            <div class="item-image">
+                <img src="Rog Ally.jpg" alt="Rog Ally">
+            </div>
+        </div>
+        <div class="bid-info">
+            <h3>Current Bid: $<span id="currentBid7">487</span></h3>
+            <input type="number" id="bidAmount7" placeholder="Enter your bid" min="1" step="1">
+            <button onclick="placeBid(7)">Place Bid</button>
+            <div class="timer">Auction ends in: <span id="countdown7"></span></div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const auctionEndTimes = {
+            1: new Date().getTime() + 60 * 60 * 1000, // 1 hour from now
+            2: new Date().getTime() + 30 * 60 * 1000, // 30 minutes from now
+            3: new Date().getTime() + 90 * 60 * 1000, // 90 minutes from now
+            4: new Date().getTime() + 120 * 60 * 1000, // 2 hours from now
+            5: new Date().getTime() + 45 * 60 * 1000, // 45 minutes from now
+            6: new Date().getTime() + 75 * 60 * 1000, // 75 minutes from now
+            7: new Date().getTime() + 50 * 60 * 1000 // 50 minutes from now
+        };
+
+        function startTimers() {
+            Object.keys(auctionEndTimes).forEach((itemId) => {
+                const countdownElement = document.getElementById(`countdown${itemId}`);
+                const timer = setInterval(() => {
+                    const now = new Date().getTime();
+                    const timeRemaining = auctionEndTimes[itemId] - now;
+
+                    if (timeRemaining < 0) {
+                        clearInterval(timer);
+                        countdownElement.innerHTML = "Auction Ended!";
+                        return;
+                    }
+
+                    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+                    countdownElement.innerHTML = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                }, 1000);
+            });
+        }
+
+        function placeBid(itemId) {
+            const bidInput = document.getElementById(`bidAmount${itemId}`);
+            const currentBidElement = document.getElementById(`currentBid${itemId}`);
+            const bidAmount = parseFloat(bidInput.value);
+            const currentBid = parseFloat(currentBidElement.innerText);
+
+            if (bidAmount > currentBid) {
+                currentBidElement.innerText = bidAmount.toFixed(2);
+                bidInput.value = "";
+                alert(`Your bid of $${bidAmount.toFixed(2)} has been placed!`);
+            } else {
+                alert("Your bid must be higher than the current bid!");
+            }
+        }
+
+        startTimers();
+    </script>
+</body>
+</html>
+
+
+
+

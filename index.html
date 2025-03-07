@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Online Auction.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f3a806, #2575fc);
+            color: #0ce4b5;
+        }
+        .welcome-container {
+            text-align: center;
+            padding: 40px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.712);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .welcome-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .welcome-container p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .welcome-container button {
+            background: #02070f;
+            color: #d8c5c5;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .welcome-container button:hover {
+            background: #06000c;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to Online Auction World</h1>
+        <p>Your one-stop destination for exciting auctions and rare finds.</p>
+        <button onclick="redirectToAuction()">Welcome Auction World</button>
+    </div>
+
+    <script>
+        function redirectToAuction() {
+            // Redirect to the auction page
+            window.location.href = "auction.html"; // Replace with the filename of your auction page
+        }
+    </script>
+</body>
+</html>
+
